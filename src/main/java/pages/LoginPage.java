@@ -3,13 +3,15 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.Log;
+
 public class LoginPage {
 
     private WebDriver driver; // private WebDriver because LoginPage needs a way to use the same brwoser that
                               // BaseTest already opened.
                               // But LoginPage does not extend BaseTest
                               // soo we pass the driver into it: LoginPgae loginPage = new LoginPage(driver)
-    private By textareaTextBox = By.className("form-control");
+    private By textareaTextBox = By.xpath("//textarea[@name='my-textarea']");
     private By textinputTextBox = By.id("my-text-id");
     //private By submitButton = By.xpath("/html/body/main/div/form/div/div[2]/label[3]/input");
     private By submitButton = By.xpath("//button[text()='Submit']");
@@ -30,6 +32,7 @@ public class LoginPage {
     }
 
     public void clickSubmitButton() {
+        Log.info("Clicking Loggin Button");
         driver.findElement(submitButton).click();
 
     }

@@ -7,7 +7,6 @@
 # Common files that should be ignored in all projects
 
 # COPIED ALL THIS FROM gittower.com . this allows to ignore not needed files for git repo
-
 # Logs
 *.log
 # Temporary files
