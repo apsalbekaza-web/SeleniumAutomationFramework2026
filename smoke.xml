@@ -8,15 +8,14 @@
     </test>
 </suite> 
 
+
 <!--
 ================================================================================
 TESTNG XML PARAMETERS (3rd way of parameterized/data-driven testing)
 ================================================================================
 
 Purpose:
-To control which tests TestNG program to run. by package.class name, by specific tests, by specific annotations/tags..
 Pass values from testng.xml into test methods at runtime.
-
 
 Mental Model:
 Instead of hardcoding values in Java or reading them from an Excel/CSV file,
